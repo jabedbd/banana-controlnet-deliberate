@@ -16,7 +16,7 @@ def init():
 
     controlnet = ControlNetModel.from_pretrained("lllyasviel/sd-controlnet-canny", torch_dtype=torch.float16)
     model = StableDiffusionControlNetPipeline.from_pretrained(
-        "XpucT/Deliberate", controlnet=controlnet, safety_checker=None, torch_dtype=torch.float16
+        "nitrosocke/Arcane-Diffusion", controlnet=controlnet, safety_checker=None, torch_dtype=torch.float16
     )
 
 
